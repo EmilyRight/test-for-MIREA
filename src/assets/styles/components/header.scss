@@ -1,0 +1,121 @@
+.header {
+
+  background-image: url("../images/pictures/pexels-inchs-9705637 23 1.png");
+}
+.header__nav {
+  padding: 8.9rem 13.4rem 8.2rem 14.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  top: -2.1rem;
+  align-self: center;
+}
+
+.burger__icon,
+.burger__icon_pseudo {
+  display: block;
+  width: 6.4rem;
+  height: 1.9rem;
+  position: relative;
+  background-image: url("../images/icons/burger.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &::before {
+    width: 6.4rem;
+    height: 1.9rem;
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/burger.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: -1.5rem;
+  }
+  &::after {
+    content: "";
+    width: 6.4rem;
+    height: 1.9rem;
+    background-image: url("../images/icons/burger.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -1.5rem;
+  }
+}
+
+.burger__icon_pseudo {
+  display: none;
+}
+
+.nav__list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  // margin-left: 12.8%;
+  max-width: 62%;
+  // gap: 2rem;
+  justify-content: flex-start;
+}
+.nav__item {
+  text-align: center;
+  align-self: flex-start;
+  max-width: 17%;
+
+  &:nth-child(1) {
+    max-width: 17%;
+    margin-right: 5.5rem;
+  }
+  &:nth-child(2) {
+    max-width: 19%;
+    margin-right: 5rem;
+  }
+  &:nth-child(3) {
+    max-width: 16.5%;
+    margin-right: 6rem;
+  }
+
+  &:nth-child(4) {
+    max-width: 12%;
+    margin-right: 3.2rem;
+  }
+
+  &:nth-child(5) {
+    max-width: 14%;
+    margin-left: 2rem;
+  }
+}
+.nav__link {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+}
+.nav__entry-btn {
+  padding:1.3rem 1.7rem 1.217rem 1.6rem;
+  background-color: #EC5550;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  align-self: center;
+  position: relative;
+  border-radius: 3px;
+  top: -0.5rem;
+}
+
+
