@@ -1,13 +1,20 @@
 .header {
-
   background-image: url("../images/pictures/pexels-inchs-9705637 23 1.png");
 }
 .header__nav {
   padding: 8.9rem 13.4rem 8.2rem 14.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  // justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
 }
@@ -15,11 +22,17 @@
 .burger-menu {
   width: 7rem;
   height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   position: relative;
   top: -2.1rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -63,16 +76,24 @@
 
 .nav__list {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  // margin-left: 12.8%;
   max-width: 62%;
-  // gap: 2rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 .nav__item {
   text-align: center;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   max-width: 17%;
 
@@ -106,16 +127,16 @@
   color: white;
 }
 .nav__entry-btn {
-  padding:1.3rem 1.7rem 1.217rem 1.6rem;
-  background-color: #EC5550;
-  font-family: 'Noto Sans', sans-serif;
+  padding: 1.3rem 1.7rem 1.217rem 1.6rem;
+  background-color: #ec5550;
+  font-family: "Noto Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: white;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   position: relative;
   border-radius: 3px;
   top: -0.5rem;
 }
-
-
