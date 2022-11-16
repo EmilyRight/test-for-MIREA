@@ -1,0 +1,55 @@
+@import "../imports.scss";
+.documents {
+  padding-top: 15.5%;
+  padding-bottom: 7%;
+  padding-left: 1.5rem;
+  background-color: $color-dark-blue;
+}
+
+.documents__links-block {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3.2%;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.documents__links {
+  max-width: 25%;
+  &:nth-child(1) {
+    .documents__item:nth-child(1),
+    .documents__item:nth-child(2) {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 5;
+        height: 100%;
+        width: 15px;
+        background-image: url("../images/icons/ArrowBlue.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}
+.documents__subtitle {
+  text-align: left;
+  padding-bottom: 7.5%;
+}
+.documents__links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.documents__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}

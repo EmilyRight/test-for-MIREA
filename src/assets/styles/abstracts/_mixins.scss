@@ -3,3 +3,35 @@
   font-weight: 400;
   font-size: 2rem;
 }
+
+@mixin round-btn {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-image: url("../images/icons/arrow.svg");
+  background-position: 1.7rem center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@mixin h2__title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #e4e6f0;
+  text-align: center;
+}
+
+@mixin h3__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+  text-align: center;
+}

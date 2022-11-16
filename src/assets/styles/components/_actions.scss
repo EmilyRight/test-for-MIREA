@@ -1,0 +1,39 @@
+@import "../imports.scss";
+
+.actions {
+  background-color: $color-dark-blue;
+  padding-top: 11.5%;
+}
+.actions__title {
+  padding-bottom: 4.3%;
+}
+
+.pictures {
+  position: relative;
+  height: 46.5vw;
+  max-height: 46.5vw;
+}
+
+.pictures__item_1 {
+  position: absolute;
+  max-width: 62.1vw;
+  height: auto;
+  top: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+.pictures__item_2 {
+  max-width: 34vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 7.5%;
+}
+
+.pictures__item_3 {
+  max-width: 34vw;
+  position: absolute;
+  bottom: 0;
+  right: 7.5%;
+}

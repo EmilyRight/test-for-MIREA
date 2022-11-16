@@ -4,22 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&family=Noto+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav nav">
         <div class="burger-menu">
-          <!-- <span class="burger__icon burger__icon_top"></span> -->
           <span class="burger__icon"></span>
           <span class="burger__icon burger__icon_pseudo"></span>
-          <!-- <span class="burger__icon burger__icon_bottom"></span> -->
         </div>
         <ul class="nav__list">
           <li class="nav__item">
@@ -41,24 +33,144 @@
         <button class="nav__entry-btn" type="button">Войти</button>
       </nav>
       <div class="header-main">
-        <h1>10-летие ООН наук об океане</h1>
-        <h2>Океан, который нам нужен, для будущего, которого мы хотим</h2>
+        <div class="h1__background"></div>
+        <h1 class="header-main__title">
+          10-летие ООН <span class="gradient-text">наук об океане</span>
+        </h1>
+        <h2 class="header-main__subtitle">
+          Океан, который нам нужен, для будущего, которого мы хотим
+        </h2>
         <div class="header-main__content">
+          <h2 class="header-main__slider-title h2__title">НОВОСТИ</h2>
           <div class="header-main__slider">
             <div class="header-main__slider_inner">
-
+              <div class="header-slider__item header-slider__item_1"></div>
+              <div
+                class="header-slider__item header-slider__item_2 header-slider__item_active"
+              ></div>
+              <div class="header-slider__item header-slider__item_3"></div>
+              <!-- <div class="header-slider__item header-slider__item_4"></div>
+              <div class="header-slider__item header-slider__item_5"></div>
+              <div class="header-slider__item header-slider__item_6"></div>
+              <div class="header-slider__item header-slider__item_7"></div>
+              <div class="header-slider__item header-slider__item_8"></div>
+              <div class="header-slider__item header-slider__item_9"></div>
+              <div class="header-slider__item header-slider__item_10"></div> -->
             </div>
-            <div class="header-main__slider-title"></div>
-            <div class="header-main__slider-btns slider-btns">
-              <button type="button" class="slider-btns__btn-left round-btn"></button>
-              <div class="slider-counter">
-                <span class="slider-counter__slide-number">1</span> / <span class="slider-counter__slides">4</span>
-              </div>
-              <button type="button" class="slider-btns__btn-right round-btn"></button>
+          </div>
+          <a href="#" class="slide-title"
+            >В. В. Путин утвердил Морскую доктрину и Корабельный устав ВМФ</a
+          >
+          <div class="header-main__slider-btns slider-btns">
+            <button
+              type="button"
+              class="slider-btns__btn-left round-btn"
+            ></button>
+            <div class="slider-counter">
+              <span class="slider-counter__slide-number">1</span>/<span
+                class="slider-counter__slides"
+                >4</span
+              >
             </div>
+            <button
+              type="button"
+              class="slider-btns__btn-right round-btn"
+            ></button>
           </div>
         </div>
       </div>
     </header>
+    <section class="documents">
+      <h2 class="h2__title">Документация</h2>
+      <div class="documents__links-block">
+        <div class="documents__links">
+          <div class="documents__subtitle h3__title">История</div>
+          <ul class="documents__links-list">
+            <li class="documents__item">
+              <a href="#" class="documents__link">Повестка 2030 и ЦУР </a>
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Возникновение идеи о Десятилетии</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Заседания ГА ООН с вопросом о Десятилетии</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Работа различных структур по подготовке Десятилетия</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Рассмотрение вопросов по Десятилетию на Ассамблее и
+                Исполсоветах МОК ЮНЕСКО</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="documents__links">
+          <div class="documents__subtitle h3__title">В мире</div>
+          <ul class="documents__links-list">
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Принятие и начало реализации Плана действий по Десятилетию</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link">Призывы к действиям</a>
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Национальные комитеты государств-членов МОК ЮНЕСКО</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Координационные структуры Десятилетия</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="documents__links">
+          <div class="documents__subtitle h3__title">В России</div>
+          <ul class="documents__links-list">
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Вопрос о Десятилетии на МНОК
+              </a>
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link">
+                Участие России в Призывах к действиям МОК</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Разработка национального плана действий – «Целей и основных
+                направлений действий …»</a
+              >
+            </li>
+            <li class="documents__item">
+              <a href="#" class="documents__link"
+                >Цели и основные направления действий, их связь с ожидаемыми
+                результатами Десятилетия
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="actions">
+      <h2 class="actions__title h2__title">ОКЕАН, КОТОРЫЙ МЫ ИМЕЕМ</h2>
+      <div class="pictures">
+        <img class='pictures__item_1' loading="lazy" decoding="async" src="./assets/images/pictures/13a23468703a4740cadecbe4646af7f7.png" alt="">
+        <img class='pictures__item_2' loading="lazy" decoding="async" src="./assets/images/pictures/Kormann--Plastics.png" alt="">
+        <img class='pictures__item_3' loading="lazy" decoding="async" src="./assets/images/pictures/5218291.png" alt="">
+      </div>
+    </section>
   </body>
 </html>

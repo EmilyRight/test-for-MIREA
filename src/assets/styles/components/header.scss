@@ -1,6 +1,11 @@
 .header {
   background-image: url("../images/pictures/pexels-inchs-9705637 23 1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 110% 100%;
+  background-position: -1rem;
 }
+
 .header__nav {
   padding: 8.9rem 13.4rem 8.2rem 14.4rem;
   display: -webkit-box;

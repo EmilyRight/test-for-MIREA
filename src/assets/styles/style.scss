@@ -1,7 +1,9 @@
+@import "./imports.scss";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 html {
@@ -21,4 +23,22 @@ button {
   background-color: none;
 }
 
+.round-btn {
+  @include round-btn;
+}
+
+.h2__title {
+  @include h2__title;
+}
+.h3__title {
+  @include h3__title;
+}
+
 @import "./components/header.scss";
+@import "./components/header-main.scss";
+@import "./components/documents";
+@import "./components/actions";
+// *{
+//   overflow: visible;
+//   outline: solid 1px red;
+// }
