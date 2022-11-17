@@ -2,19 +2,17 @@
 
 .actions {
   background-color: $color-dark-blue;
-  padding-top: 11.5%;
-  padding-bottom: 5.5%;
+  padding-top: 11%;
+  padding-bottom: 6%;
   position: relative;
+  // overflow-x: hidden;
 
 }
 .line {
   position: absolute;
-  min-height: 71.6%;
-  width: 60%;
-  bottom: 0vw;
-  left: 41.5%;
   background-image: url('../images/icons/Line.svg');
   background-repeat: no-repeat;
+  background-size: cover;
   &::after {
     position: absolute;
     content: '';
@@ -29,7 +27,10 @@
 .actions__title {
   padding-bottom: 4.3%;
 }
-
+.container {
+  width: fit-content;
+  height: auto;
+}
 .pictures {
   position: relative;
   max-height: 46.5vw;

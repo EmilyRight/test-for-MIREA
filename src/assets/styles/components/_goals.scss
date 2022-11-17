@@ -1,0 +1,270 @@
+@import "../imports.scss";
+.goals {
+  padding-top: 18.2%;
+  background-color: $color-dark-blue;
+  position: relative;
+}
+.goals__h2-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 4.6%;
+}
+.number-line {
+  position: relative;
+  display: block;
+
+}
+.goals__line {
+  position: absolute;
+  width: 45vw;
+  height: 83%;
+  background-image: url("../images/icons/big-line.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 36%;
+  top: 75rem;
+}
+.goals__list {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.goals__item {
+  display: flex;
+  justify-content: start;
+
+  &:nth-child(1) {
+    gap: 6%;
+    & .goals__content {
+      max-width: 40%;
+    }
+  }
+  &:nth-child(2) {
+    gap: 6%;
+    & .goals__content {
+      max-width: 50%;
+    }
+  }
+  &:nth-child(3) {
+    & .goals__content {
+      max-width: 36%;
+      margin-right: 4rem;
+    }
+    & .goals__number {
+      margin-bottom: 9rem;
+      margin-right: 22rem;
+    }
+  }
+  &:nth-child(4) {
+    & .goals__content {
+      max-width: 50%;
+      padding-left: 6rem;
+    }
+    & .goals__img {
+      margin-right: 15rem;
+    }
+  }
+  &:nth-child(5) {
+    padding-top: 12rem;
+    & .goals__content {
+      max-width: 45%;
+      margin-right: 2rem;
+    }
+    & .goals__img {
+      margin-right: 15rem;
+    }
+    & .goals__number {
+      margin-bottom: -3rem;
+      margin-right: 15rem;
+    }
+  }
+  &:nth-child(6) {
+    & .goals__content {
+      padding-top: 6.5rem;
+      max-width: 49%;
+      padding-left: 7rem;
+    }
+    & .goals__img {
+      margin-right: 17rem;
+    }
+    & .goals__number {
+      margin-bottom: 10rem;
+    }
+  }
+  &:nth-child(7) {
+    & .goals__content {
+      padding-top: 13rem;
+      max-width: 45%;
+    }
+
+    & .goals__number {
+      margin-bottom: -3rem;
+      margin-left: 17%;
+    }
+  }
+}
+.goals__number {
+  order: 2;
+  position: relative;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 119px;
+  color: rgba(170, 191, 233, 0.36);
+  align-self: center;
+}
+.goals__number_right-float {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8.375rem;
+    height: 8.375rem;
+    background-image: url("../images/icons/spot.svg");
+    background-repeat: no-repeat;
+    top: 2rem;
+    right: -10rem;
+  }
+}
+.goals__number_left-float {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8.375rem;
+    height: 8.375rem;
+    background-image: url("../images/icons/spot.svg");
+    background-repeat: no-repeat;
+    top: 2rem;
+    left: -9rem;
+  }
+}
+
+.goals__content {
+  padding-top: 4%;
+  max-width: 37%;
+}
+.goals__title {
+  padding-bottom: 4.5%;
+  @include h2__title;
+  text-transform: none;
+  text-align: left;
+  font-size: clamp(20px, 2.05vw, 40px);
+}
+.goals__text {
+  @include small-text;
+  color: #ffffff;
+  font-size: clamp(16px, 1.26vw, 20px);
+}
+.goals__text_right {
+  order: 3;
+}
+.goals__img_order-1 {
+  order: 1;
+}
+.goals__content_order-3 {
+  padding-top: 0;
+  max-width: 49%;
+  order: 3;
+}
+.goals__img {
+}
+.goals__img_01 {
+  width: 32vw;
+  max-width: 50rem;
+  height: 45rem;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/solnce-voda-volna-okean01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem 0rem;
+  order: 3;
+}
+
+.goals__img_02 {
+  order: 1;
+  width: 35vw;
+  height: 25vw;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/anypics02.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -1rem 4rem;
+}
+.goals__img_03 {
+  width: 30%;
+  height: 31vw;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/03.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem 4rem;
+  order: 3;
+}
+
+.goals__img_04 {
+  order: 1;
+  width: 25vw;
+  height: 23vw;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/04.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem 0.5rem;
+}
+.goals__img_05 {
+  width: 32%;
+  height: 27vw;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/05.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem 3rem;
+  order: 3;
+}
+.goals__img_06 {
+  order: 1;
+  width: 28%;
+  height: 25vw;
+  background-image: radial-gradient(
+      113.77% 113.77% at 50.9% 45.1%,
+      rgba(9, 14, 95, 0) 0%,
+      #090e5f 50.18%
+    ),
+    url("../images/pictures/06.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: flex-start;
+}
+.goals__img_07 {
+  order: 3;
+  width: 28%;
+  height: 19vw;
+}
